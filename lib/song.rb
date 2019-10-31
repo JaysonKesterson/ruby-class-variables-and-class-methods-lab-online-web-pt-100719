@@ -1,0 +1,30 @@
+class Song
+  @@count = 0
+  @@genres = []
+  @@artists = []
+  attr_accessor :name, :artist, :genre 
+  
+  def initialize
+    @@count += 1
+    @@genres << genre
+    @@artists << artist
+  end
+  
+  def self.count
+    @@count
+  end
+  
+  def self.genres
+    @@genres = @@genres.uniq
+    @@genres
+  end
+  
+  def self.artists
+    @@artists = @@artists.uniq
+    @@artists
+  end
+  
+  def self.genre_count
+    
+  end
+end
